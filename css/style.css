@@ -3,11 +3,11 @@
 /*共通セレクタ*/
 
 body {
-  font-family: lato, raleway;
+  font-family: "raleway", "lato";
 }
 
 .inner {
-width: 70%;
+width: 1100px;
 margin: 0 auto;
 }
 
@@ -133,8 +133,7 @@ margin: 0 auto;
 }
 
 .work__img {
-  margin-left: 100px;
-  width: calc( ( 100% - 200px ) / 3 );
+  margin-right: 100px;
   opacity: 0.7;
   transition: all .3s;
 }
@@ -147,9 +146,8 @@ margin: 0 auto;
   margin-top: 80px;
 }
 
-.work__img:nth-child(1),
-.work__img:nth-child(4) {
-  margin-left: 0;
+.work__img:nth-child(3n){
+  margin-right: 0;
 }
 
 .work__form {
@@ -161,6 +159,7 @@ margin: 0 auto;
   margin: 0 auto;
   text-align: center;
   color: #333;
+  line-height: 20px;
 }
 
 .work__green-btn {
@@ -191,15 +190,10 @@ margin: 0 auto;
 
 .skill {
   margin-left: 180px;
-  width: calc( ( 100% - 540px ) / 4 );
 }
 
 .skill:first-child {
   margin-left: 0px;
-}
-
-.skill__img {
-  width: 100%;
 }
 
 .skill__text {
@@ -237,4 +231,11 @@ margin: 0 auto;
 .footer__inner {
   text-align: end;
   color: #fff;
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+@media screen and (max-width: 480px) {
+
 }
