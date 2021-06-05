@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body">
   <header class="header">
     <div class="inner header__inner clearfix">
       <i class="fas fa-bolt"></i>
@@ -34,10 +34,10 @@
     <section class="can-do">
       <div class="inner can-do__inner">
         <div class="can-do__content">
-          <img class="can-do__iphone-img" src="./img/iphone.png"></img>
+          <img class="can-do__iphone-img" src="./img/iphone.png" alt="">
         </div>
         <div class="can-do__content">
-          <h5 class="can-do__title">WHAT WE CAN DO?</h5>
+          <h2 class="can-do__title">WHAT WE CAN DO?</h2>
           <p class="can-do__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
             has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -47,27 +47,39 @@
     </section>
     <article class="work">
       <div class="inner work__inner">
-        <section class="work__imgs">
-          <h5 class="work__title">OUR LATEST WORK</h5>
+        <div class="work__imgs">
+          <h2 class="work__title">OUR LATEST WORK</h2>
           <figure class="work__figure">
-            <img class="work__img" src="./img/01.jpg" alt="">
-            <img class="work__img" src="./img/02.jpg" alt="">
-            <img class="work__img" src="./img/03.jpg" alt="">
-            <img class="work__img" src="./img/04.jpg" alt="">
-            <img class="work__img" src="./img/05.jpg" alt="">
-            <img class="work__img" src="./img/06.jpg" alt="">
+            <a class="work__img" href="">
+              <img src="./img/01.jpg" alt="">
+            </a>
+            <a class="work__img" href="">
+              <img src="./img/02.jpg" alt="">
+            </a>
+            <a class="work__img" href="">
+              <img src="./img/03.jpg" alt="">
+            </a>
+            <a class="work__img" href="">
+              <img src="./img/04.jpg" alt="">
+            </a>
+            <a class="work__img" href="">
+              <img src="./img/05.jpg" alt="">
+            </a>
+            <a class="work__img" href="">
+              <img src="./img/06.jpg" alt="">
+            </a>
           </figure>
-        </section>
-        <section class="work__form">
+        </div>
+        <div class="work__form">
           <p class="work__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
             has been the industry's standard dummy text ever.</p>
-          <a class="green-btn work__green-btn" href="">Email Me!</a>
-        </section>
+          <a class="work__green-btn" href="">Email Me!</a>
+        </div>
       </div>
     </article>
     <section class="skills">
       <div class="inner">
-        <h5 class="skills__title">OUR SKILLS</h5>
+        <h2 class="skills__title">OUR SKILLS</h2>
         <figure class="skills__figure">
           <div class="skill">
             <img class="skill__img" src="./img/circle_01.png" alt="">
@@ -90,10 +102,20 @@
     </section>
     <nav class="contact">
       <div class="inner contact__inner">
-        <a class="sns__icon fab fa-facebook-f" href=""></a>
-        <a class="sns__icon fab fa-dribbble" href=""></a>
-        <a class="sns__icon fab fa-twitter" href=""></a>
-        <a class="sns__icon fas fa-envelope" href=""></a>
+        <ul class="sns__icons">
+          <li class="sns__icon">
+            <a class="sns__icon__link fab fa-facebook-f" href=""></a>
+          </li>
+          <li class="sns__icon">
+            <a class="sns__icon__link fab fa-dribbble" href=""></a>
+          </li>
+          <li class="sns__icon">
+            <a class="sns__icon__link fab fa-twitter" href=""></a>
+          </li>
+          <li class="sns__icon">
+            <a class="sns__icon__link fas fa-envelope" href=""></a>
+          </li>
+        </ul>
       </div>
     </nav>
   </main>
