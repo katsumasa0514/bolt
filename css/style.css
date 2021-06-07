@@ -49,6 +49,10 @@
   color: #333;
 }
 
+.header__humbugger {
+  display: none;
+}
+
 .main {
   margin-top: 70px;
 }
@@ -124,22 +128,22 @@
   font-size: 0;
 }
 
-.work__img {
+.work__img-link {
   margin-left: 100px;
   opacity: 0.7;
   transition: all .3s;
 }
 
-.work__img:hover {
+.work__img-link:hover {
   opacity: 1;
 }
 
-.work__img:nth-child(n+4) {
+.work__img-link:nth-child(n+4) {
   margin-top: 80px;
 }
 
-.work__img:nth-child(1),
-.work__img:nth-child(4){
+.work__img-link:nth-child(1),
+.work__img-link:nth-child(4){
   margin-left: 0;
 }
 
@@ -244,8 +248,121 @@
     max-width: 97%;
   }
 
+  .can-do {
+    padding: 50px 0 25px 0;
+  }
+
+  .can-do__inner {
+    display: block;
+    padding: 0 100px;
+  }
+
+  .can-do__content {
+    margin: 0;
+  }
+
+  .can-do__content:last-child {
+    margin-top: 20px;
+  }
+
+  .work__figure {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .work__img-link,
+  .work__img-link:nth-child(n+4) {
+    margin: 0;
+  }
+
+  .work__img-link:nth-child(4){
+    margin-top: 80px;
+  }
+
+  .work__form {
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+  }
+
+  .work__green-btn {
+    margin: 40px 0 0 0;
+  }
+
+  .skills__figure {
+    flex-direction: column;
+  }
+
+  .skill {
+    margin: 88px 0 0 0;
+  }
+
+  .skill:first-child {
+    margin-top: 0;
+  }
+
 }
 @media screen and (max-width: 767px) {
-  
+  .header__green-btn {
+    display: none;
+  }
+
+  .header__humbugger {
+    display: block;
+    float: right;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .bar {
+    width: 25px;
+    height: 2px;
+    background-color: #ddd;
+    margin-top: 5px;
+  }
+
+  .bar:first-child {
+    margin-top: 0;
+  }
+
+  .title {
+    padding: 160px 0 130px 0;
+  }
+
+  .title__main-title {
+    font-size: 80px;
+  }
+
+  .title__sub-title {
+    font-size: 30px;
+  }
+
+  .can-do__inner {
+    padding: 0;
+  }
+
+  .work__form {
+    padding: 0;
+  }
+
+  .sns__icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact {
+    padding: 50px 0;
+  }
+
+  .work__img-link,
+  .work__img {
+    width: 100%;
+  }
+
+  .sns__icon {
+    width: 100%;
+  }
 
 }
