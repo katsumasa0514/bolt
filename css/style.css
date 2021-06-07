@@ -3,7 +3,7 @@
 /*共通セレクタ*/
 
 .body {
-  font-family: "raleway", "lato";
+  font-family: "lato", "raleway";
 }
 
 .inner {
@@ -15,6 +15,19 @@
   display: block;
   content: "";
   clear: both;
+}
+
+.green-btn {
+  box-sizing: border-box;
+  transition: all .3s;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  background-color: #74cfae;
+}
+
+.green-btn:hover {
+  color: #333;
 }
 
 /*個別セレクタ*/
@@ -35,18 +48,8 @@
 }
 
 .header__green-btn {
-  box-sizing: border-box;
-  font-size: 12px;
   padding: 14px 12px;
-  background-color: #74cfae;
   float: right;
-  color: #fff;
-  text-decoration: none;
-  transition: all .3s;
-}
-
-.header__green-btn:hover {
-  color: #333;
 }
 
 .header__humbugger {
@@ -55,6 +58,7 @@
 
 .main {
   margin-top: 70px;
+  text-align: center;
 }
 
 .title {
@@ -66,7 +70,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .title__main-title {
@@ -93,7 +96,6 @@
 .can-do__content {
   margin-left: 75px;
   color: #fff;
-  text-align: center;
 }
 .can-do__iphone-img {
   vertical-align: top;
@@ -116,7 +118,6 @@
 }
 
 .work__title {
-  text-align: center;
   font-size: 24px;
   color: #333;
 }
@@ -142,8 +143,7 @@
   margin-top: 80px;
 }
 
-.work__img-link:nth-child(1),
-.work__img-link:nth-child(4){
+.work__img-link:nth-child(3n+1){
   margin-left: 0;
 }
 
@@ -152,7 +152,6 @@
   justify-content: center;
   align-items: center;
   padding: 0 200px;
-  text-align: center;
   color: #333;
   margin-top: 90px;
 }
@@ -161,16 +160,6 @@
   padding: 14px 20px;
   margin-left: 90px;
   white-space: nowrap;
-  box-sizing: border-box;
-  font-size: 12px;
-  background-color: #74cfae;
-  color: #fff;
-  text-decoration: none;
-  transition: all .3s;
-}
-
-.work__green-btn:hover {
-  color: #333;
 }
 
 .work__text {
@@ -180,7 +169,6 @@
 .skills {
   background-color: #4e4e4e;
   padding: 70px 0 100px 0;
-  text-align: center;
 }
 
 .skills__title {
@@ -217,7 +205,6 @@
 .sns__icons {
   display: flex;
   justify-content: center;
-  text-align: center;
 }
 
 .sns__icon {
@@ -278,8 +265,12 @@
     margin: 0;
   }
 
-  .work__img-link:nth-child(4){
+  .work__img-link:nth-child(3n+1) {
     margin-top: 80px;
+  }
+
+  .work__img-link:first-child {
+    margin-top: 0;
   }
 
   .work__form {
